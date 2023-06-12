@@ -32,7 +32,7 @@ public class calculator {
         else if (operation.equals("division")){
             // Nested if statement
             if(num2 == 0){
-                System.out.printf("Cannot divide number by 0")
+                System.out.println("Cannot divide number by 0");
             }
             System.out.printf("%f / %f = %f", num1, num2, num1 / num2);
         }
