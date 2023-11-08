@@ -15,6 +15,7 @@ public class HashSetMethods {
 
         // Creating a new HashSet object
         Set<Integer> x = new HashSet<>();
+        
         // Adding elements to the HashSet using the Arrays.asList() method
         x.addAll(Arrays.asList(1,3,5,7));
 

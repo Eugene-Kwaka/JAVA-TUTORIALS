@@ -13,26 +13,32 @@ public class LoopingSets {
         anime.add("Berserk");
 
         // Iterator
-        System.out.println("====== Using the iterator method ======");
-        //Create an iterator variable from Iterator interface
-        Iterator<String> iter = anime.iterator();
-        while(iter.hasNext()){
-            System.out.println(iter.next());
+        // System.out.println("====== Using the iterator method ======");
+        // //Create an iterator variable from Iterator interface
+        // Iterator<String> iter = anime.iterator();
+        // while(iter.hasNext()){
+        //     System.out.println(iter.next());
             
-        }
-        // ForEach()
-        System.out.println("====== Using forEach() ======");
-        for(String movie : anime){
-            System.out.println(movie);
-        }
+        // }
+        // // ForEach()
+        // System.out.println("====== Using forEach() ======");
+        // for(String movie : anime){
+        //     System.out.println(movie);
+        // }
         
-        // lambda expression inside a forEach()
-        System.out.println("====== Using lambda Expression in a forEach() ======");
-        anime.forEach(movie -> System.out.println(movie));
+        // // lambda expression inside a forEach()
+        // System.out.println("====== Using lambda Expression in a forEach() ======");
+        // anime.forEach(movie -> System.out.println(movie));
 
-        // StreamAPI
-        System.out.println("====== Using Stream() ======");
-        anime.stream().forEach(movie -> System.out.println(movie));
+        // // StreamAPI
+        // System.out.println("====== Using Stream() ======");
+        // anime.stream().forEach(movie -> System.out.println(movie));
+
+        // forEachRemaining
+        Iterator<String> it = anime.iterator();
+        it.forEachRemaining(movie -> {
+            System.out.println(movie);
+        });
 
     }
 }

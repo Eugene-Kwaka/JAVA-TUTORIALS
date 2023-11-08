@@ -8,24 +8,16 @@ public class DequeExample {
     public static void main(String[] args) {
         Deque<String> deque = new LinkedList<>();
 
-        //Add to the deque from the rear
+        //Add to the deque from the tail
         deque.add("Captain America (Tail)");
-
-        // Add from the front
-        deque.addFirst("IronMan 1 (Head)");
-
-        // Add to the rear 2
         deque.addLast("Thor (Tail)");
-
-        // Add at the first
-        deque.push("Antman (Head)");
- 
-        // Add at the last
         deque.offer("Endgame (Tail)");
- 
-        // Add at the first
-        deque.offerFirst("Spiderman (Head)");
 
+        // Add from the head
+        deque.addFirst("IronMan 1 (Head)");
+        deque.offerFirst("Spiderman (Head)");
+        deque.push("Antman (Head)");
+        
         System.out.println("Print the deque: " + deque);
         
         

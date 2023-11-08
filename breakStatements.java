@@ -13,15 +13,18 @@ public class breakStatements {
         first:
             for (int x = 0; x <= 5; x++) {
             // Second label
+            
             second:
-                for (int j = 0; j <= 5; j++) {
+                for (int j = 0; j <= 5;) {
                     if (x == 1 && j == 1) {
 
                         // Using break statement with label
                         break first;
                     }
                     System.out.println(x + " " + j);
+                    break second;
                 }
+               
             }
     }
 }

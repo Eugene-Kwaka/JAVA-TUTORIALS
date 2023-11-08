@@ -14,7 +14,7 @@ public class userInput2 {
         // INPUT 2
         // parsing the nextLine() method to accept integer inputs
         int age = Integer.parseInt(scanner.nextLine());
-        System.out.printf("Wow, %d is an adult. Where do you live currently? \n", age);
+        System.out.printf("You are %d years old. Where do you live currently? \n", age);
 
 
         //INPUT 3

@@ -14,7 +14,7 @@ public class userInput {
         // INPUT 2
         // scanner.nextInt is for integer inputs
         int age = scanner.nextInt();
-        System.out.printf("Wow, %d is an adult. Where do you live currently? \n", age);
+        System.out.printf("You are %d years old. Where do you live currently? \n", age);
 
         // add extra scanner.nextLine() to clean the buffer
         scanner.nextLine();
