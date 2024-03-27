@@ -8,7 +8,7 @@ class MyException extends Exception {
 }
 
 // A Class that uses above MyException
-public class Main {
+public class ExecuteExceptions {
 	// Driver Program
 	public static void main(String args[])
 	{
