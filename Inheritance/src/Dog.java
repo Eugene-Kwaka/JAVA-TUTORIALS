@@ -1,4 +1,6 @@
-public class Dog extends Animal{
+package Inheritance.src;
+
+public class Dog extends Mnyama {
     public void speak(){
         System.out.println("Woof");
     }

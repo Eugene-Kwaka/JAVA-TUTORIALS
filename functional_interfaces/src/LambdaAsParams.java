@@ -1,3 +1,4 @@
+package functional_interfaces.src;
 // I am using Lambda Functions as parameters in a method
 
 // Functional interface
@@ -6,7 +7,7 @@ interface BinaryCalc{
 }
 
 
-public class LambdaAsParams {
+class LambdaAsParams {
     // this method takes two int values and a lambda func as its parameters
     public static void printOperation(int a, int b, BinaryCalc func){
         int result = func.binaryOperation(a, b);

@@ -1,29 +1,10 @@
-// Functional interface
-interface BinaryCalc{
-    public abstract int binaryOperation(int value1, int value2);
-}
-
-class Calculator{
-    // static method belongs to Calculator class only
-    public static int multiply(int value1, int value2) {
-        return value1 * value2;
-    }
-
-    // instance method
-    public int getMax(int value1, int value2) {
-        if (value1 > value2) {
-            return value1;
-        } else {
-            return value2;
-        }
-    }
-}
+package functional_interfaces.src;
 
 // Class with the main method
 public class StaticMethodReference {
     
     //method taking func expression as a parameter
-    // This method defines funtional interface's abstract method(lambda expression) 
+    // This method defines functional interface's abstract method(lambda expression)
     public static void printBinaryResult(int a, int b, BinaryCalc func) {
         int result = func.binaryOperation(a, b);
         System.out.println(result);

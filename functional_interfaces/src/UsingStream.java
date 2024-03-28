@@ -1,11 +1,13 @@
+package functional_interfaces.src;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
 // Employee class with parameterized constructor
-class Employee{
+class StreamEmployee {
     String name;
 
-    Employee(String name, int i){
+    StreamEmployee(String name){
         this.name = name;
     }
 
@@ -41,7 +43,7 @@ class UsingStream {
         List<String> employeeList = List.of("Dexter", "Wolf", "Simba", "Rex");
         //make a list of actual employee objects with their names
         // employed Constructor Method Reference with the new keyword
-        List<Employee> employees = employeeList.stream().map(Employee::new).collect(Collectors.toList());
+        List<StreamEmployee> employees = employeeList.stream().map((String name) -> new StreamEmployee(name)).collect(Collectors.toList());
         System.out.println(employees);
 
         // Use of Stream with method reference by arbitrary objects

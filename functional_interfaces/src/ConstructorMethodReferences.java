@@ -1,4 +1,4 @@
-// Constructor Method References
+package functional_interfaces.src;// Constructor Method References
 
 interface GetAnObject{
     // interface has an abstract method that doesn't take any params but returns an object (Constructor)

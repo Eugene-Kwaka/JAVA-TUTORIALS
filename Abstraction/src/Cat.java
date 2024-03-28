@@ -1,4 +1,6 @@
-public class Cat extends Animal{
+package Abstraction.src;
+
+public class Cat extends Animal {
     String name;
 
     public void makeSound(){

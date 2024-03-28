@@ -1,3 +1,5 @@
+package Abstraction.src;
+
 public abstract class Animal {
     public int numberOfLives = 1;
 	
