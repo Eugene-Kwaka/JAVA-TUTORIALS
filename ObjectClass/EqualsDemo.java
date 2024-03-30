@@ -23,10 +23,8 @@ class Pizza{
         // Downcasting o to be an object of type Pizza in a new variable called other
         Pizza other = (Pizza) o;
         // confirm that if the size and topping of this(current object) and other are equal, then return true
-        if (this.size == other.size){
-            if (this.topping.equals(other.topping)){
+        if (this.size == other.size && this.topping.equals(other.topping)) {
                 return true;
-            }
         }
         return false;
 
