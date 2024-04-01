@@ -2,6 +2,7 @@
 target/
 out/
 bin/
-.gitignore
+*.gitignore
 Study Guide for SkillStorm Programming Roles 1.docx
 .vscode/
+*.class
