@@ -13,6 +13,18 @@ import java.util.Set;
 public class HashSetMethods {
     public static void main(String[] args) {
 
+        //*********************** WORKING WITH FRIEND CLASS USING HASHSET*************************************** */
+        HashSet<Friend> friends = new HashSet<>();
+
+        friends.add(new Friend("Eugene", 26));
+        friends.add(new Friend("John", 21));
+        friends.add(new Friend("Doe", 20));
+
+        // toString() method provides a customized way to list the HashSet elements
+        System.out.println(friends.toString());
+
+        
+        //*********************** DIFFERENT OPERATIONS USING HASHSET*************************************** */
         // Creating a new HashSet object
         Set<Integer> x = new HashSet<>();
         
@@ -42,12 +54,21 @@ public class HashSetMethods {
         System.out.println("Difference of the sets");
         diff.removeAll(y);
         System.out.println(diff);
+    
+    }
+}
 
+class Friend {
+    String name;
+    int age;
 
+    public Friend(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
 
-
-
-
-        
+    //Overriden the Object.toString() method and implemented it my own way
+    public String toString(){
+        return name + " " + age;
     }
 }
