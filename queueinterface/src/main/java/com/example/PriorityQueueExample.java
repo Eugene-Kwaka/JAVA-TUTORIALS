@@ -25,7 +25,7 @@ public class PriorityQueueExample {
         while(!pq.isEmpty()){
             System.out.println(pq.peek());
             
-        }
+         }
    }
 
 }
