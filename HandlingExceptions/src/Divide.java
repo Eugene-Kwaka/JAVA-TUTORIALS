@@ -5,6 +5,18 @@ import java.util.Scanner;
 
 public class Divide {
     private static Scanner sc = new Scanner(System.in);
+
+	public static double divide(double x, double y) throws ArithmeticException {
+		
+		if (y == 0) {
+			throw new ArithmeticException("You cannot have a denominator of 0"); // Throw the checked exception
+			// DenominatorCannotBeZeroException
+		}
+		
+		double result = x / y;
+		
+		return result;
+	}
 	
 	public static void main(String[] args) {
 		
@@ -34,15 +46,5 @@ public class Divide {
 		
 	}
 	
-	public static double divide(double x, double y) throws ArithmeticException {
-		
-		if (y == 0) {
-			throw new ArithmeticException("You cannot have a denominator of 0"); // Throw the checked exception
-			// DenominatorCannotBeZeroException
-		}
-		
-		double result = x / y;
-		
-		return result;
-	}
+
 }
